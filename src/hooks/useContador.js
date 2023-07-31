@@ -4,13 +4,15 @@ export const useContador = ( valorInicial = 0) => {
 
     const [contar, setContar] = useState(valorInicial)
 
-    const incremento = ( event, valor = 5) => {
-        setContar (contar + valor)
+    const incremento = ( valor = 1) => {
+        //setContar (contar + valor)
+        setContar ( (current) => current + valor)
     }
 
-    const decremento = (valor) => {
+    const decremento = (valor = 1) => {
         if (contar === 0 ) return
-        setContar (contar - valor)
+        //setContar (contar - valor)
+        setContar ( (current) => current - valor)
     }
 
     const inicializar = () => {
@@ -19,7 +21,7 @@ export const useContador = ( valorInicial = 0) => {
 
 
     return {
-        contar: contar,
+        contar,
         incremento,
         decremento,
         inicializar

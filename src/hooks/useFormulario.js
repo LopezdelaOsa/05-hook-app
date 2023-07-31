@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-export const useFormulario = ( FormularioInicial = { }) => {
+export const useFormulario = ( formularioInicial = { }) => {
 
-    const [estadoFormulario, setEstadoFormulario] = useState( FormularioInicial )
+    const [estadoFormulario, setEstadoFormulario] = useState( formularioInicial )
 
     const alCambiar = ({target}) => {
         //console.log(event.target.value)
@@ -14,7 +14,7 @@ export const useFormulario = ( FormularioInicial = { }) => {
     }
 
     const onReseteoFormulario = () => {
-        setEstadoFormulario ( FormularioInicial )
+        setEstadoFormulario ( formularioInicial )
 
     }
 
