@@ -7,6 +7,7 @@ export const TudoItem = ( {tudo, onDeleteTudo, onToggleTudo} ) => {
         <span
           className={`align-self-center ${ (tudo.done) ? 'text-decoration-line-through' : '' } `}
           onClick={ () => onToggleTudo(tudo.id) }
+          aria-label="span"
           >{tudo.descripcion}
         </span>
         <button

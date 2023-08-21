@@ -23,11 +23,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
  // <React.StrictMode>  
  //  {/*<CounterApp />*/}    {/*<CounterConCustomHook />*/}    {//<FormularioSimple />   <FormularioConCustomHook /> <MultipleCustomHooks /> <FocoPantalla /> <Layout />
  //<Memorizar /> <MemoHook />  <CallBackHook />  <Padre />
- // <TudoApp />
+ 
  //}
 <BrowserRouter>
-    {/* <MainApp /> */}
-    <MultipleCustomHooks />
+    {/* <TudoApp /> */}
+    <MainApp />
+    {/* <MultipleCustomHooks /> */}
 </BrowserRouter>
 // </React.StrictMode>,
 )

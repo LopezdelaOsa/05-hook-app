@@ -12,6 +12,7 @@ export const MultipleCustomHooks = () => {
     //const { data, isLoading, hasError} = useFetch('https://rickandmortyapi.com/api/character/1')
     //const { data, isLoading, hasError} = useFetch(`https://rickandmortyapi.com/api/character/${contar}`)
     const { data, isLoading, hasError } = useFetch('https://api.breakingbadquotes.xyz/v1/quotes')
+    //const {author, quote} = !!data && data[0]
 
     //console.log (data, isLoading, hasError)
 
@@ -30,6 +31,7 @@ export const MultipleCustomHooks = () => {
           isLoading 
           ? (<Loading />) 
           : (<Citas datos={data}/>)
+          //: (<Citas author={author} quote={quote} />)
         }
 
         <button
